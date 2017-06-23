@@ -25,7 +25,7 @@ async function beep(duration) {
 async function canBook(page) {
   let res = false;
   res = await page.evaluate(function() {
-    return !!$('#zreserve').text();
+    return $('#zreserve').text() === '我要看房';
   });
   logger2(` 测试结果: ${res}`)
   return res;
