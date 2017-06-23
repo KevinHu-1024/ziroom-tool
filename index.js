@@ -5,7 +5,7 @@ const config = require('./config');
 const url = config.url;
 
 const ms2s = 1000;
-const interval = 15 * ms2s;
+const interval = config.interval * ms2s;
 let count = 1;
 function sleep(time) {
   // logger2(`sleep ${time/1000} s`)
