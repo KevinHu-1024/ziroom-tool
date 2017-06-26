@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npm run clean && node index.js",
+    "clean": "rm -rf ./log && touch log",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
